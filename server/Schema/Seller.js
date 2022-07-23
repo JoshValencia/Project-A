@@ -4,8 +4,9 @@ const SellerSchema = new mongoose.Schema({
     name: {type: String, required:true},
     address1: {type: String, required:true},
     address2: String,
-    phoneNumber: String,
+    phoneNumber: Number,
     emailAddress: String,
+    stores: [{type: 'ObjectId', ref: 'Store'}]
 }, { timestamps: { createdAt: 'created_at' }});
 
 const Seller = mongoose.model('Seller', SellerSchema)

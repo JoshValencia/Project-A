@@ -7,7 +7,6 @@ const formFields = [
     placeholder: "",
     name:"s-uid",
     required: true,
-    value: 
   },
   {
     type: "text",
